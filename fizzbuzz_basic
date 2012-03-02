@@ -1,1 +1,23 @@
-// fizzbuzz
+/* 
+This is the coding of Fizzbuzz with the least possible code.
+Print 1-100 replacing numbers divisible by 3 with "Fizz", by 5 with "Buzz", and by 5 and 3 with "FizzBuzz".
+*/
+
+
+// initialize the loop to run from 1 to 100
+for(var i = 1; i <= 100; i++) {
+	
+
+// create condition to print out "Fizz"/"Buzz"/"Fizzbuzz" using modulo operator
+	if(i % 15 === 0)
+		console.log("FizzBuzz");
+	
+	else if(i % 5 === 0)
+		console.log("Buzz");
+	
+	else if(i % 3 === 0)
+		console.log("Fizz");
+	
+	else
+		console.log(i);
+}

@@ -1,0 +1,42 @@
+/*
+Create a function fizz buzz that takes two arguments: start, end.
+Have the user input the start and end numbers of their choice.
+Replace "Fizz Buzz" with user's "FirstName LastName".
+*/
+
+function fizzbuzz(start, end) {
+    
+    var name = prompt("What's your fist & last name? (i.e. Joe Smith)");
+    var start = prompt("What number do you want to start at?");
+    var end = prompt("What number do you want to end at?");
+    
+    if(start < 1) {
+        console.log("Your starting number is too low.");
+        return false;
+    }
+    
+    if(end > 100) {
+        console.log("Your end number is too high");
+        return false;
+    }
+    
+    name = name.split(" ");
+    var firstName = name[0];
+    var lastName = name[1];
+    
+    for(i = start; i <= end; i++) {
+        
+        if (i % 15 === 0)
+            console.log(name.slice(",").join(" ") + "!");
+        
+        else if(i % 5 === 0)
+            console.log(lastName);
+            
+        else if(i % 3 === 0)
+            console.log(firstName);
+        
+        else
+            console.log(i);
+    }
+    
+}
