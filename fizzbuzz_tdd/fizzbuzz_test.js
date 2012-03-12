@@ -62,4 +62,8 @@ test("When i enter a multiple of 15, i should get back fizzbuzz", function() {
   equal(fizzbuzz(15), "fizzbuzz");
 });
 
+test("WHen I enter 50, I should get back buzz", function() {
+	equal(fizzbuzz(50), "buzz);
+});
+
 
